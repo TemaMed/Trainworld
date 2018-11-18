@@ -1,0 +1,31 @@
+{% extends "trainworld/wrapper.html" %}
+	{% block content %}
+<div class="table-responsive-sm">
+    <table  class="table table-bordered table-dark" >
+        <thead align="center">
+			<tr>
+            <th>Номер поезда</th>
+      		<th>Название</th>
+      		<th>Тип</th>
+            <th>Класс</th>
+            <th>Откуда</th>
+      		<th>Куда</th>
+      		<th>Дата отправки</th>
+            <th>Дата приезда</th>
+			</tr>
+		</thead>
+    {% for train in port.trains %}
+        <tr>
+            <td align="center">{{ train.train }}</td>
+            <td align="center">{{ train.name }}</td>
+            <td align="center">{{ train.type }}</td>
+            <td align="center">{{ train.class }}</td>
+            <td align="center">{{ train.arrival }}</td>
+            <td align="center">{{ train.depurt }}</td>
+            <td align="center">{{ train.timerun }}</td>
+            <td align="center">{{ train.timeend }}</td>
+        </tr>
+    </table>
+    {% endfor %}
+</div>
+         {% endblock %}

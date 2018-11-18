@@ -1,0 +1,31 @@
+{% extends "trainworld/wrapper.html" %}
+{% block content %}
+<div class="table-responsive-sm">
+    <table  class="table table-bordered table-dark" >
+		<thead align="center">
+			<tr>
+            <th>Город</th>
+      		<th>Название вокзала</th>
+      		<th>Статус</th>
+            <th>Информация</th>
+			</tr>
+		</thead>
+    {% for port in ports %}
+        <tr>
+
+			<td align="center">{{ port.city }}</td>
+            <td align="center">{{ port.name_port }}</td>
+            <td align="center">{{ port.status }}</td>
+
+            <td>
+                <form id="f" method="post" action="get_port" align="center" >
+                    {% csrf_token %}
+                    <input type="submit" name="name" class="btn-dark" value={{ port.city }}>
+                </form>
+            </td>
+
+        </tr>
+    {% endfor %}
+        </table>
+</div>
+{% endblock %}

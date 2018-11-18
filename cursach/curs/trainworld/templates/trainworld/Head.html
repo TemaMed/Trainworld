@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Trainworld</title>
+    {% load staticfiles %}
+     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+</head>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="">
+		<img src="/static/trainworld/image/train.png" width="100" height="29" alt="...">
+	</a>
+  	<div class="collapse navbar-collapse" id="navbar1">
+    	<ul class="navbar-nav mr-auto">
+		    <li class="nav-item">
+		    	<a class="nav-link" href="admin">Вход</a>
+		    </li>
+    	</ul>
+        <ul class="navbar-nav mr-auto">
+		    <li class="nav-item">
+		    	<img src="/static/trainworld/image/text.png" width="200" height="29" alt="...">
+		    </li>
+    	</ul>
+    	<form class="form-inline my-2 my-lg-0">
+      		<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      		<button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+    	</form>
+  	</div>
+</nav>
