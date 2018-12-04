@@ -1,20 +1,51 @@
-{% extends "trainworld/wrapper.html" %}
-	{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="/static/trainworld/image/1.png" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trainworld</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+</head>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="">
+        <img src="/static/trainworld/image/train.png" width="100" height="29" alt="...">
+    </a>
+    <div class="collapse navbar-collapse" id="navbar1">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <img src="/static/trainworld/image/text.png" width="200" height="29" alt="..." align="center">
+            </li>
+        </ul>
+        <ul class="navbar-nav mr-a">
+            <form id="f" method="post" action="admin">
+                {% csrf_token %}
+                <input type="text" name="login" placeholder="Введите логин">
+                <input type="password" name="password" placeholder="Введите пароль">
+                <input type="submit" name="city" value={{ port.city }} class="btn-dark" >
+            </form>
+        </ul>
+
+    </div>
+</nav>
+<body>
 <div class="table-responsive-sm">
-    <table  class="table table-bordered table-dark" >
+    <table class="table table-bordered table-dark">
         <thead align="center">
-			<tr>
+        <tr>
             <th>Номер поезда</th>
-      		<th>Название</th>
-      		<th>Тип</th>
+            <th>Название</th>
+            <th>Тип</th>
             <th>Класс</th>
             <th>Откуда</th>
-      		<th>Куда</th>
-      		<th>Дата отправки</th>
+            <th>Куда</th>
+            <th>Дата отправки</th>
             <th>Дата приезда</th>
-			</tr>
-		</thead>
-    {% for train in port.trains %}
+        </tr>
+        </thead>
+        {% for train in port.trains %}
         <tr>
             <td align="center">{{ train.train }}</td>
             <td align="center">{{ train.name }}</td>
@@ -25,7 +56,11 @@
             <td align="center">{{ train.timerun }}</td>
             <td align="center">{{ train.timeend }}</td>
         </tr>
+        {% endfor %}
     </table>
-    {% endfor %}
+
+    <form id="f" method="post" action="add_train" align="center">
+    </form>
 </div>
-         {% endblock %}
+</body>
+</html>

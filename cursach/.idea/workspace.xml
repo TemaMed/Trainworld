@@ -2,20 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b60cdd33-ebdb-4eab-a624-9b697c6dc472" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curs/trainworld/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curs/trainworld/static/trainworld/image/-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curs/trainworld/static/trainworld/image/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curs/trainworld/static/trainworld/image/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curs/trainworld/static/trainworld/image/text.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curs/trainworld/static/trainworld/image/Вход.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curs/trainworld/templates/trainworld/Head.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curs/trainworld/templates/trainworld/admin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curs/trainworld/templates/trainworld/admin_editor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curs/trainworld/templates/trainworld/info_port.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curs/trainworld/templates/trainworld/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curs/trainworld/templates/trainworld/wrapper.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/curs/trainworld/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/curs/trainworld/templates/trainworld/add_train.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curs/trainworld/ports.json" beforeDir="false" afterPath="$PROJECT_DIR$/curs/trainworld/ports.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curs/trainworld/templates/trainworld/admin_editor.html" beforeDir="false" afterPath="$PROJECT_DIR$/curs/trainworld/templates/trainworld/admin_editor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curs/trainworld/templates/trainworld/info_port.html" beforeDir="false" afterPath="$PROJECT_DIR$/curs/trainworld/templates/trainworld/info_port.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curs/trainworld/templates/trainworld/wrapper.html" beforeDir="false" afterPath="$PROJECT_DIR$/curs/trainworld/templates/trainworld/wrapper.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curs/trainworld/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/curs/trainworld/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/curs/trainworld/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/curs/trainworld/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,13 +71,22 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="821288368">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.107" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/curs/trainworld/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
+            <state relative-caret-position="286">
               <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
@@ -96,8 +98,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/curs/trainworld/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="60" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
+            <state relative-caret-position="154">
+              <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -132,11 +134,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/curs/trainworld/ports.json">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="745" selection-start-column="745" selection-end-column="745" />
+              <caret column="1" selection-start-column="1" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -153,21 +155,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/curs/trainworld/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
+            <state relative-caret-position="638">
               <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
               <folding>
                 <element signature="e#24#34#0" expanded="true" />
-                <marker date="1542535428893" expanded="true" signature="1310:1364" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/curs/trainworld/templates/trainworld/admin_editor.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="676">
-              <caret line="45" column="55" selection-start-line="45" selection-start-column="55" selection-end-line="45" selection-end-column="55" />
+            <state relative-caret-position="990">
+              <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/curs/manage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -238,6 +248,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -325,7 +336,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -405,7 +415,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10927505" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.110341154" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -456,13 +466,7 @@
     <entry file="file://$PROJECT_DIR$/curs/trainworld/apps.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/../g/Python/homework03/life_with_classes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="85" column="27" selection-start-line="85" selection-start-column="16" selection-end-line="85" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../g/Python/homework03/life_with_classes.py" />
     <entry file="file://$PROJECT_DIR$/curs/trainworld/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -470,13 +474,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2793">
           <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/curs/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -496,34 +493,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/curs/trainworld/users.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/curs/trainworld/scratch_1.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/curs/trainworld/Organizations.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="5" selection-start-line="6" selection-start-column="4" selection-end-line="17" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/curs/trainworld/train.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/curs/trainworld/users.json" />
+    <entry file="file://$PROJECT_DIR$/curs/trainworld/scratch_1.json" />
+    <entry file="file://$PROJECT_DIR$/curs/trainworld/Organizations.json" />
+    <entry file="file://$PROJECT_DIR$/curs/trainworld/train.json" />
     <entry file="file://$PROJECT_DIR$/curs/trainworld/templates/trainworld/Head.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
@@ -537,10 +510,27 @@
     <entry file="file://$PROJECT_DIR$/curs/trainworld/templates/trainworld/login.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/curs/trainworld/templates/trainworld/admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="29" column="56" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/curs/trainworld/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
+        <state relative-caret-position="286">
           <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/curs/trainworld/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -554,13 +544,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/curs/trainworld/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/curs/trainworld/templates/trainworld/main.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
@@ -568,30 +551,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/curs/trainworld/templates/trainworld/admin.html">
+    <entry file="file://$PROJECT_DIR$/curs/trainworld/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="29" column="56" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="56" />
-          <folding>
-            <element signature="n#style#0;n#input#2;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/curs/trainworld/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="60" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/curs/trainworld/templates/trainworld/admin_editor.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="45" column="55" selection-start-line="45" selection-start-column="55" selection-end-line="45" selection-end-column="55" />
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
@@ -604,11 +567,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/curs/trainworld/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
+        <state relative-caret-position="638">
           <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
           <folding>
             <element signature="e#24#34#0" expanded="true" />
-            <marker date="1542535428893" expanded="true" signature="1310:1364" ph="..." />
           </folding>
         </state>
       </provider>
@@ -616,7 +578,21 @@
     <entry file="file://$PROJECT_DIR$/curs/trainworld/ports.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="745" selection-start-column="745" selection-end-column="745" />
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/curs/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/curs/trainworld/templates/trainworld/admin_editor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
         </state>
       </provider>
     </entry>
