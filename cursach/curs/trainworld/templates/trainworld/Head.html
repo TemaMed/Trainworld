@@ -1,31 +1,91 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="shortcut icon" href="/static/trainworld/image/1.png" type="image/x-icon">
     <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Trainworld</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trainworld</title>
     {% load staticfiles %}
-     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="">
-		<img src="/static/trainworld/image/train.png" width="100" height="29" alt="...">
-	</a>
-  	<div class="collapse navbar-collapse" id="navbar1">
-    	<ul class="navbar-nav mr-auto">
-		    <li class="nav-item">
-		    	<a class="nav-link" href="admin">Вход</a>
-		    </li>
-    	</ul>
+        <img src="/static/trainworld/image/train.png" width="100" height="29" alt="...">
+    </a>
+    <div class="collapse navbar-collapse" id="navbar1">
         <ul class="navbar-nav mr-auto">
-		    <li class="nav-item">
-		    	<img src="/static/trainworld/image/text.png" width="200" height="29" alt="...">
-		    </li>
-    	</ul>
-    	<form class="form-inline my-2 my-lg-0">
-      		<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      		<button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-    	</form>
-  	</div>
+            <li class="nav-item">
+                <img src="/static/trainworld/image/text.png" width="200" height="29" alt="..." align="center">
+            </li>
+        </ul>
+        <ul class="navbar-nav navbar-dark bg-dark mr-auto">
+            <form id="f" method="post" action="search" align="center">
+                {% csrf_token %}
+                <label class="text-light">Выбор Города:</label>
+                <select type="search" name="search" class="form-control-sm">
+                    {% for port in ports %}
+                        <option name="search" value={{ port.city }}>{{ port.city }}</option>
+                    {% endfor %}
+                </select>
+                <select type="search1" name="search1" class="form-control-sm">
+                    {% for port in ports %}
+                        <option name="search1" value={{ port.name_port }}>{{ port.name_port }}</option>
+                    {% endfor %}
+                </select>
+                <!--<input type="submit" value="Информация" class="btn-dark" style="width: 160px;">-->
+                <button type="submit" class="btn btn-light">Информация</button>
+            </form>
+        </ul>
+    </div>
+    <ul class="navbar-nav mr-a">
+        <form id="f" method="post" action="search1">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-light" style="width:320px;">Информация о вокзалах всех вокзалах</button>
+        </form>
+    </ul>
 </nav>
+<body>
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="/static/trainworld/image/train2.jpg" alt="Chicago" width="1920" height="1280">
+        </div>
+        <div class="carousel-item">
+            <img src="/static/trainworld/image/train3.jpg" alt="New York" width="1920" height="1280">
+        </div>
+        <div class="carousel-item">
+            <img src="/static/trainworld/image/train4.jpg" alt="Chicago" width="1920" height="1280">
+        </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+</div>
+</body>
+</html>

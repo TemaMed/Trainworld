@@ -22,12 +22,11 @@
         <ul class="navbar-nav mr-a">
             <form id="f" method="post" action="admin">
                 {% csrf_token %}
-                <input type="text" name="login" placeholder="Введите логин">
-                <input type="password" name="password" placeholder="Введите пароль">
-                <input type="submit" name="city" value={{ port.city }} class="btn-dark" >
+                <input type="text" name="login" placeholder="Введите логин" class="form-control-sm">
+                <input type="password" name="password" placeholder="Введите пароль" class="form-control-sm" >
+                <button type="submit" name="city" class="btn btn-light" value={{ port.city }} style="width:80px;">Вход</button>
             </form>
         </ul>
-
     </div>
 </nav>
 <body>

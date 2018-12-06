@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html>
+{% load staticfiles %}
 <head>
     <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Trainworld</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trainworld</title>
     {% load staticfiles %}
-     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
 </head>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="">
-		<img src="/static/trainworld/image/train.png" width="100" height="29" alt="...">
-	</a>
-  	<div class="collapse navbar-collapse" id="navbar1">
-		    	<img src="/static/trainworld/image/text.png" width="200" height="29" alt="...">
-    	<ul class="navbar-nav mr-auto">
-		    <li class="nav-item">
-		    	<a class="nav-link" >Admin panel</a>
-		    </li>
-    	</ul>
-    	<form class="form-inline my-2 my-lg-0">
-    	</form>
-  	</div>
+        <img src="/static/trainworld/image/train.png" width="100" height="29" alt="...">
+    </a>
+    <div class="collapse navbar-collapse" id="navbar1">
+        <img src="/static/trainworld/image/text.png" width="200" height="29" alt="...">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link">Admin panel</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+        </form>
+    </div>
 </nav>
 <body>
 
-<div>
-    <form id="f" method="post" action="add_train">
+<div class="table-responsive">
+    <form id="f" method="post" action="add_train" align="center">
         {% csrf_token %}
+        <a class="navbar navbar-light bg-light">Добавление поезда</a>
         <input type="text" class="form-control" name="train" placeholder="Номер поезда">
         <input type="text" class="form-control" name="name" placeholder="Название">
         <input type="text" class="form-control" name="type" placeholder="Тип">
@@ -36,7 +38,19 @@
         <input type="text" class="form-control" name="depurt" placeholder="Приезд">
         <input type="text" class="form-control" name="timerun" placeholder="Дата отправки">
         <input type="text" class="form-control" name="timeend" placeholder="Дата приезда">
-        <button type="submit" name="city" value={{ port }} class="btn-dark">Добавить</button>
+        <button type="submit" class="btn btn-dark" name="city" value={{ port }} href="trainworld/main.html">Добавить
+        </button>
+    </form>
+    <form id="f" method="post" action="add_train" align="center">
+        {% csrf_token %}
+        <a class="navbar navbar-light bg-light">Удаление поезда</a>
+        <select name="se" type="se" class="form-control">
+            {% for train in t.trains %}
+                <option value={{ train.name }}>{{ train.name }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit" class="btn btn-dark" name="city" value={{ port }} href="trainworld/main.html">Удалить
+        </button>
     </form>
 </div>
 
